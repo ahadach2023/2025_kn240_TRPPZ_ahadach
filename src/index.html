@@ -1,41 +1,10 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Моя перша сторінка</title>
-    <style>
-        .container {
-            display: flex; 
-            justify-content: space-between; 
-            margin-top: 20px;
-        }
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: lightblue;
-            text-align: center;
-            line-height: 100px;
-            font-weight: bold;
-        }
-        img {
-            width: 300px;
-            margin-top: 10px;
-        }
-        .form-container {
-            margin-top: 30px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            max-width: 300px;
-        }
-        input, button {
-            margin-bottom: 10px;
-            padding: 8px;
-            font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <h1>Вітаю на моєму сайті!</h1>
@@ -47,8 +16,16 @@
         <li><a href="https://itcollege.lviv.ua">IT College</a></li>
     </ul>
 
-    
-    <img src="https://via.placeholder.com/300x200.png?text=Моє+зображення" alt="Зображення">
+    <ul class="colored-list">
+        <li>Пункт 1</li>
+        <li>Пункт 2</li>
+        <li>Пункт 3</li>
+        <li>Пункт 4</li>
+        <li>Пункт 5</li>
+        <li>Пункт 6</li>
+    </ul>
+
+    <img src="https://via.placeholder.com/300x200.png?text=Моє+зображення" alt="Зображення" />
 
     <div class="container">
         <div class="box">1</div>
@@ -59,11 +36,15 @@
     <div class="form-container">
         <h2>Форма реєстрації</h2>
         <form>
-            <input type="text" placeholder="Ім’я" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Пароль" required>
+            <input type="text" placeholder="Ім’я" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Пароль" required />
             <button type="submit">Зареєструватися</button>
         </form>
+    </div>
+
+    <div id="full-width-text">
+        Це текст на всю ширину сторінки, вирівняний по центру.
     </div>
 </body>
 </html>
